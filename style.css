@@ -1,0 +1,74 @@
+/*StAuth10244: I William Derksen 000834722, certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.*/
+html {
+    background-color: #131516;
+}
+
+#map {
+    margin: auto;
+    margin-top: 10px;
+    height: 700px;
+    width: 1400px;
+    margin-left: 15%;
+    float: left;
+}
+
+#directionPanel {
+    margin: auto;
+    float: right;
+    height: 700px;
+    overflow-y: scroll;
+    background-color: #131516;
+    color: #FAEBD7;
+}
+
+#closeDirPanel {
+    display: none;
+}
+
+/*styling for dropdown menus*/
+.dropdown {
+    text-align: center;
+    background-color: #1f2224;
+    color: #FAEBD7;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+.dropdown-menu {
+    background-color: #181A1B;
+
+}
+
+.dropdown-item:hover {
+    background-color: #303436;
+    color: #FAEBD7;
+}
+
+.dropdown-item {
+    color: #FAEBD7;
+}
+
+/*styling for directions panel*/
+tr,
+span {
+    color: #FAEBD7;
+}
+
+.adp-text {
+    color: black;
+}
+
+/*remove the black border around the infoWindow 'x', credit stackoverflow user Tomas
+        https://stackoverflow.com/a/68906199*/
+.gm-style-iw button:focus {
+    outline: 0;
+}
+
+/*mobile style */
+@media (max-width: 800px) {
+    #map {
+        margin-left: 0%;
+        height: 700px;
+        width: 100%;
+    }
+}
