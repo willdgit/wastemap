@@ -67,7 +67,7 @@ span {
 @media (max-width: 800px) {
     #map {
         margin-left: 0%;
-        height: 700px;
+        height: 500px;
         width: 100%;
     }
 }
