@@ -1,3 +1,4 @@
+
 document.getElementById("geolocate").onclick = function () {
     navigator.geolocation.getCurrentPosition(showPositionOnMap);
 }
@@ -64,6 +65,12 @@ var dest_position;
 
 //send a directionRender request using the position and destination params
 function showDirections(position, destination) {
+    if (destination == null) {
+        $("#exampleModal").modal("show");
+    }
+
+
+
     //if method is passed a GeoPosition, 
     if (position instanceof GeolocationPosition) {
         //make a LatLng from its coords (direction request can't use a GeoPosition)
@@ -114,6 +121,9 @@ function toggleMode() {
 var marked = false;//keep track if the user has marked their location already
 //geolocate the user and place a marker on their position, based on position var
 function showPositionOnMap(position) {
+
+
+
     //if user has been marked, unset it before we add another
     if (marked) {
         user_marker.setMap(null);
@@ -216,7 +226,7 @@ function initMap() {
             document.getElementById("map").style.marginLeft = '15%';
         }
     });
-    
+
     addMarkers();
 }
 
