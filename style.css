@@ -63,11 +63,16 @@ span {
     outline: 0;
 }
 
+.modal-content{
+    background-color: #131516;
+    color: white;
+}
+
 /*mobile style */
 @media (max-width: 800px) {
     #map {
         margin-left: 0%;
-        height: 600px;
+        height: 700px;
         width: 100%;
     }
 }
