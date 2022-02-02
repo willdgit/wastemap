@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Hamilton Waste Map</title>
 
     <link rel="stylesheet" href="style.css">
@@ -16,10 +19,29 @@
 </head>
 
 <body>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Direction Error</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Make sure you Geolocate your position and click on a destination marker.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="dropdown">
         <h5>Hamilton Waste Map</h5>
-
         <button class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Filter
         </button>
@@ -82,7 +104,7 @@
     <!--load the waste establishement data-->
     <!--source: https://open.hamilton.ca/datasets/7204cc5a245e4285b8f776a241d2be9c_11/explore?location=43.212950%2C-79.894400%2C11.79-->
     <script src="Waste_Landfills_and_Transfer_Stations.js"></script>
-    
+
     <!--custom script-->
     <script src="script.js"></script>
 
@@ -101,5 +123,4 @@
         </script>
 
 </body>
-
 </html>
