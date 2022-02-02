@@ -65,7 +65,7 @@ var dest_position;
 
 //send a directionRender request using the position and destination params
 function showDirections(position, destination) {
-    if (destination == null) {
+    if (position == null || destination == null) {
         $("#exampleModal").modal("show");
     }
 
